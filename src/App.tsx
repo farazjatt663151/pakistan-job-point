@@ -194,7 +194,7 @@ export default function App() {
       });
     } else {
       applySeoMetadata({
-        title: 'Pakistan Job Point – Latest Government & Private Jobs in Pakistan',
+        title: 'Pakistan Job Point - Latest Government & Private Jobs in Pakistan',
         description:
           'Explore verified Government and Private sector jobs in Karachi, Lahore, Islamabad, Rawalpindi, Peshawar, Quetta and across Pakistan by education level.',
       });
@@ -359,13 +359,13 @@ export default function App() {
                   <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-stretch">
                     <div className="lg:col-span-7 flex flex-col justify-center">
                       <p className="text-xs font-semibold text-emerald-300">
-                        Pakistan Career Directory · Demo Mode Active
+                        Pakistan Job Point · Government &amp; Private Vacancies
                       </p>
                       <h1 className="mt-3 font-display text-[clamp(2.25rem,4vw,3.5rem)] font-bold leading-[1.1] tracking-tight text-white text-balance">
-                        Find verified Government and Private jobs across Pakistan.
+                        Pakistan Job Point
                       </h1>
                       <p className="mt-4 max-w-xl text-base leading-relaxed text-slate-300">
-                        Search clearly structured listings by city, qualification, department, and application deadline—with direct links to official recruitment portals.
+                        Find verified Government and Private jobs across Pakistan. Search clearly structured listings by city, qualification, department, and application deadline—with direct links to official recruitment portals.
                       </p>
                       <div className="mt-7 flex flex-wrap items-center gap-3">
                         <a

@@ -883,7 +883,14 @@ export function AdminDashboard({
                         >
                           {job.title}
                         </button>
-                        <div className="text-xs text-slate-500">{job.department}</div>
+                        <div className="text-xs text-slate-500">
+                          {job.isDemo && (
+                            <span className="mr-1.5 font-mono font-bold text-amber-800">
+                              DEMO ·
+                            </span>
+                          )}
+                          {job.department}
+                        </div>
                       </td>
                       <td className="px-4 py-3 text-xs font-medium text-slate-700">
                         {job.category}

@@ -24,6 +24,7 @@ import {
   resetWorkspaceToDefault,
   saveJobsToLocalWorkspace,
 } from './utils/jobStorage';
+import { trackPageView } from './utils/analytics';
 import { applySeoMetadata } from './utils/seo';
 
 const DEFAULT_FILTERS: JobFilters = {
@@ -116,7 +117,7 @@ export default function App() {
     return jobs.find((j) => j.slug === slug) ?? null;
   }, [currentPath, jobs]);
 
-  // Dynamic SEO Metadata & JSON-LD
+  // Dynamic SEO Metadata, JSON-LD, and GA4 SPA Page View Tracking
   useEffect(() => {
     if (activeJob) {
       applySeoMetadata({
@@ -125,10 +126,7 @@ export default function App() {
         canonicalPath: `/job/${activeJob.slug}`,
         job: activeJob,
       });
-      return;
-    }
-
-    if (currentPath === '/jobs/government') {
+    } else if (currentPath === '/jobs/government') {
       applySeoMetadata({
         title: 'Government Jobs in Pakistan – Pakistan Job Point',
         description:
@@ -199,6 +197,8 @@ export default function App() {
           'Explore verified Government and Private sector jobs in Karachi, Lahore, Islamabad, Rawalpindi, Peshawar, Quetta and across Pakistan by education level.',
       });
     }
+
+    trackPageView(currentPath, document.title);
   }, [currentPath, activeJob]);
 
   // Filtered and Sorted Listings

@@ -32,6 +32,21 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7W5STX55GH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      if (window.location.pathname === '/admin' || window.location.pathname.startsWith('/admin/')) {
+        window['ga-disable-G-7W5STX55GH'] = true;
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-7W5STX55GH', {
+        send_page_view: false,
+        allow_google_signals: false,
+        allow_ad_personalization_signals: false
+      });
+    </script>
     <!-- Google AdSense Integration: Replace ca-pub-XXXXXXXXXXXXXXXX with your approved Publisher ID before going live -->
     <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
     <script type="application/ld+json" id="pjp-structured-data">

@@ -281,7 +281,17 @@ export function StaticPages({ page, onNavigate }: StaticPageProps) {
           </section>
 
           <section className="space-y-2 text-sm leading-relaxed text-slate-700">
-            <h2 className="font-display text-base font-bold text-[#0B1611]">2. Google AdSense &amp; Cookies</h2>
+            <h2 className="font-display text-base font-bold text-[#0B1611]">2. Google Analytics &amp; Visitor Metrics</h2>
+            <p>
+              Pakistan Job Point uses Google Analytics 4 (Measurement ID <code className="font-mono text-xs bg-slate-100 px-1 py-0.5 rounded">G-7W5STX55GH</code>) to understand aggregate visitor traffic, page views, scrolling engagement, and outbound clicks to official application portals. Google Analytics uses first-party cookies (such as <code className="font-mono text-xs bg-slate-100 px-1 py-0.5 rounded">_ga</code>) to measure site usage and improve navigation.
+            </p>
+            <p>
+              We do not send personal information—such as names, email addresses, passwords, or job application details—to Google Analytics, and administrative routes are excluded from analytics tracking. You can disable analytics cookies through your browser settings or install the official Google Analytics Opt-out Browser Add-on.
+            </p>
+          </section>
+
+          <section className="space-y-2 text-sm leading-relaxed text-slate-700">
+            <h2 className="font-display text-base font-bold text-[#0B1611]">3. Google AdSense &amp; Cookies</h2>
             <p>
               When Google AdSense is enabled on Pakistan Job Point, third-party vendors, including Google, may use cookies to serve ads based on a user’s prior visits to this website or other websites. Google’s use of advertising cookies enables it and its partners to serve ads to users based on their visit to this site and/or other sites on the Internet.
             </p>
@@ -291,14 +301,14 @@ export function StaticPages({ page, onNavigate }: StaticPageProps) {
           </section>
 
           <section className="space-y-2 text-sm leading-relaxed text-slate-700">
-            <h2 className="font-display text-base font-bold text-[#0B1611]">3. External Links</h2>
+            <h2 className="font-display text-base font-bold text-[#0B1611]">4. External Links</h2>
             <p>
               Every “Apply Now” link directs you to an external official recruitment portal or employer website. Pakistan Job Point is not responsible for the privacy practices or content of third-party websites.
             </p>
           </section>
 
           <section className="space-y-2 text-sm leading-relaxed text-slate-700">
-            <h2 className="font-display text-base font-bold text-[#0B1611]">4. Policy Updates &amp; Contact</h2>
+            <h2 className="font-display text-base font-bold text-[#0B1611]">5. Policy Updates &amp; Contact</h2>
             <p>
               We may update this Privacy Policy as our platform evolves. Questions regarding this policy can be submitted through our Contact Us page.
             </p>
